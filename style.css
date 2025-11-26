@@ -1,0 +1,99 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #d63384; /* roza boja teksta */
+    background-color: white; /* može ostati kao fallback ako slika ne učita */
+    
+    /* samo dodaj ovo za sliku */
+    background-image: url('putanja/do/tvoje-slike.jpg'); 
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;  
+    background-attachment: fixed; 
+}
+        header {
+            background-color: #f8a5c2; /* svjetloroza pozadina */
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            color: #b30059;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #ffb6c1; /* roza traka */
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #b30059;
+        }
+
+        main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        main h2 {
+            color: #b30059;
+        }
+
+        .uvod {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .gumbi {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .gumbi button {
+            width: 300px;
+            padding: 15px;
+            background-color: #ffb6c1;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .gumbi button:hover {
+            background-color: #b30059;
+        }
+
+        footer {
+            background-color: #f8a5c2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+    
