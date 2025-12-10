@@ -111,3 +111,23 @@
     margin-bottom: 15px;
     color: #cc0066; /* posebna boja za naslov */
 }
+/* Sticky footer za cijelu stranicu, uključujući O NAMA */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* zauzima sav raspoloživi prostor između headera i footera */
+}
+
+/* Footer stil */
+footer {
+    background-color: #cc8897; /* boja footera */
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
