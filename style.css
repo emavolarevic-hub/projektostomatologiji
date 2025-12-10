@@ -89,11 +89,25 @@
         }
 
         footer {
-            background-color: #a5f3f8;
+            background-color: #cc8897;
             color: white;
             text-align: center;
             padding: 15px;
             margin-top: 40px;
         }
     </style>
-    
+    /* Stilovi za dio "O NAMA" */
+.o-nama {
+    font-family: 'Georgia', serif; /* novi font za O NAMA */
+    color: #ff3399; /* nova boja teksta */
+    background-color: #ffe6f0; /* lagana pozadina */
+    padding: 30px;
+    border-radius: 10px; /* za vizualni efekt */
+    margin-bottom: 30px; /* razmak od ostalog sadržaja */
+}
+
+.o-nama h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #cc0066; /* posebna boja za naslov */
+}
