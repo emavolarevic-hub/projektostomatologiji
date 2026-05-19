@@ -1,289 +1,260 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dent Mind</title>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dent Mind</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ══ NAVIGACIJA ══ -->
-<nav>
-  <div class="nav-inner">
+    <!-- Navigacija -->
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Dent <span>Mind</span></a>
 
-    <a href="index.html" class="nav-logo">Dent <span>Mind</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Izbornik">
+                <span></span><span></span><span></span>
+            </button>
 
-    <button class="hamburger" id="hamburger" aria-label="Izbornik">
-      <span></span><span></span><span></span>
-    </button>
+            <ul class="nav-links" id="navLinks">
 
-    <ul class="nav-links" id="navLinks">
+                <!-- O NAMA s dropdownom -->
+                <li class="nav-item">
+                    <button class="nav-trigger" aria-expanded="false">
+                        O nama
+                        <svg class="strelica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown">
+                        <a href="onama.html">
+                            <span class="dd-ikona">🏥</span>
+                            <span class="dd-tekst">
+                                <strong>O projektu</strong>
+                                <small>Tko smo i što radimo</small>
+                            </span>
+                        </a>
+                        <a href="onama.html#tim">
+                            <span class="dd-ikona">👥</span>
+                            <span class="dd-tekst">
+                                <strong>Tim</strong>
+                                <small>Naši autori i doktori</small>
+                            </span>
+                        </a>
+                    </div>
+                </li>
 
-      <!-- O NAMA -->
-      <li class="nav-item">
-        <button class="nav-trigger" aria-expanded="false">
-          O nama
-          <svg class="strelica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-            <polyline points="6 9 12 15 18 9"/>
-          </svg>
-        </button>
-        <div class="dropdown">
-          <a href="onama.html">
-            <span class="dd-ikona">🏥</span>
-            <span class="dd-tekst">
-              <strong>O projektu</strong>
-              <small>Tko smo i što radimo</small>
-            </span>
-          </a>
-          <a href="onama.html#tim">
-            <span class="dd-ikona">👥</span>
-            <span class="dd-tekst">
-              <strong>Tim</strong>
-              <small>Naši autori i doktori</small>
-            </span>
-          </a>
+                <!-- KONTAKT -->
+                <li class="nav-item">
+                    <a href="#kontakt">Kontakt</a>
+                </li>
+
+                <!-- NAJVAŽNIJE s dropdownom -->
+                <li class="nav-item">
+                    <button class="nav-trigger" aria-expanded="false">
+                        Najvažnije
+                        <svg class="strelica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown">
+                        <a href="#predmeti">
+                            <span class="dd-ikona">📚</span>
+                            <span class="dd-tekst">
+                                <strong>Predmeti i kolegiji</strong>
+                                <small>Pregled svih predmeta</small>
+                            </span>
+                            <span class="dd-badge free">Besplatno</span>
+                        </a>
+                        <a href="#osnovna-skripta">
+                            <span class="dd-ikona">📄</span>
+                            <span class="dd-tekst">
+                                <strong>Osnovna skripta</strong>
+                                <small>Temeljni materijali</small>
+                            </span>
+                            <span class="dd-badge free">Besplatno</span>
+                        </a>
+                        <div class="dd-sep"></div>
+                        <a href="#detaljna-skripta">
+                            <span class="dd-ikona">📖</span>
+                            <span class="dd-tekst">
+                                <strong>Detaljna skripta</strong>
+                                <small>Dubinska obrada</small>
+                            </span>
+                            <span class="dd-badge premium">Premium</span>
+                        </a>
+                        <a href="#pripreme">
+                            <span class="dd-ikona">🎯</span>
+                            <span class="dd-tekst">
+                                <strong>Pripreme za predmete</strong>
+                                <small>Ispitne pripreme</small>
+                            </span>
+                            <span class="dd-badge premium">Premium</span>
+                        </a>
+                        <a href="#videi">
+                            <span class="dd-ikona">🎬</span>
+                            <span class="dd-tekst">
+                                <strong>Videi za praksu</strong>
+                                <small>Vizualni vodič</small>
+                            </span>
+                            <span class="dd-badge premium">Premium</span>
+                        </a>
+                        <a href="#ai">
+                            <span class="dd-ikona">🤖</span>
+                            <span class="dd-tekst">
+                                <strong>AI asistent</strong>
+                                <small>Pitaj što god trebaš</small>
+                            </span>
+                            <span class="dd-badge premium">Premium</span>
+                        </a>
+                        <a href="#3d">
+                            <span class="dd-ikona">🦷</span>
+                            <span class="dd-tekst">
+                                <strong>3D prikaz čeljusti</strong>
+                                <small>Interaktivni model</small>
+                            </span>
+                            <span class="dd-badge free">Besplatno</span>
+                        </a>
+                        <a href="#karijere">
+                            <span class="dd-ikona">🎓</span>
+                            <span class="dd-tekst">
+                                <strong>Karijere</strong>
+                                <small>Mogućnosti nakon studija</small>
+                            </span>
+                            <span class="dd-badge free">Besplatno</span>
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
         </div>
-      </li>
+    </nav>
 
-      <!-- SADRŽAJ -->
-      <li class="nav-item">
-        <button class="nav-trigger" aria-expanded="false">
-          Sadržaj
-          <svg class="strelica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-            <polyline points="6 9 12 15 18 9"/>
-          </svg>
-        </button>
-        <div class="dropdown">
-          <a href="#predmeti">
-            <span class="dd-ikona">📚</span>
-            <span class="dd-tekst">
-              <strong>Predmeti i kolegiji</strong>
-              <small>Pregled svih predmeta</small>
-            </span>
-            <span class="dd-badge free">Besplatno</span>
-          </a>
-          <a href="#osnovna-skripta">
-            <span class="dd-ikona">📄</span>
-            <span class="dd-tekst">
-              <strong>Osnovna skripta</strong>
-              <small>Temeljni materijali</small>
-            </span>
-            <span class="dd-badge free">Besplatno</span>
-          </a>
-          <div class="dd-sep"></div>
-          <a href="#detaljna-skripta">
-            <span class="dd-ikona">📖</span>
-            <span class="dd-tekst">
-              <strong>Detaljna skripta</strong>
-              <small>Dubinska obrada</small>
-            </span>
-            <span class="dd-badge premium">Premium</span>
-          </a>
-          <a href="#pripreme">
-            <span class="dd-ikona">🎯</span>
-            <span class="dd-tekst">
-              <strong>Pripreme za predmete</strong>
-              <small>Ispitne pripreme</small>
-            </span>
-            <span class="dd-badge premium">Premium</span>
-          </a>
-          <a href="#videi">
-            <span class="dd-ikona">🎬</span>
-            <span class="dd-tekst">
-              <strong>Videi za praksu</strong>
-              <small>Vizualni vodič</small>
-            </span>
-            <span class="dd-badge premium">Premium</span>
-          </a>
+    <!-- Naslov i uvod -->
+    <header>
+        <h1>Dobrodošli na<br><em>Dent Mind</em></h1>
+        <p>Istraži predmete na stomatologiji, praktične vježbe, slike, kvizove i pripreme za ispite.</p>
+        <div class="hero-gumbi">
+            <a href="#sadrzaj" class="btn btn-puni">🦷 Istraži sadržaj</a>
+            <a href="#3d" class="btn btn-rubni">3D prikaz čeljusti</a>
         </div>
-      </li>
+    </header>
 
-      <!-- ALATI -->
-      <li class="nav-item">
-        <button class="nav-trigger" aria-expanded="false">
-          Alati
-          <svg class="strelica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-            <polyline points="6 9 12 15 18 9"/>
-          </svg>
-        </button>
-        <div class="dropdown">
-          <a href="#ai">
-            <span class="dd-ikona">🤖</span>
-            <span class="dd-tekst">
-              <strong>AI asistent</strong>
-              <small>Pitaj što god trebaš</small>
-            </span>
-            <span class="dd-badge premium">Premium</span>
-          </a>
-          <a href="#3d">
-            <span class="dd-ikona">🦷</span>
-            <span class="dd-tekst">
-              <strong>3D prikaz čeljusti</strong>
-              <small>Interaktivni model</small>
-            </span>
-            <span class="dd-badge free">Besplatno</span>
-          </a>
-          <a href="#karijere">
-            <span class="dd-ikona">🎓</span>
-            <span class="dd-tekst">
-              <strong>Karijere</strong>
-              <small>Mogućnosti nakon studija</small>
-            </span>
-            <span class="dd-badge free">Besplatno</span>
-          </a>
+    <!-- Glavni sadržaj -->
+    <main id="sadrzaj">
+        <h2>Odaberi što želiš istražiti:</h2>
+        <div class="separator"></div>
+
+        <div class="gumbi">
+            <a href="#predmeti" class="kartica-gumb" id="predmeti">
+                <div class="kg-ikona">📚</div>
+                <span class="kg-badge free">Besplatno</span>
+                <strong>Predmeti i kolegiji</strong>
+            </a>
+            <a href="#osnovna-skripta" class="kartica-gumb" id="osnovna-skripta">
+                <div class="kg-ikona">📄</div>
+                <span class="kg-badge free">Besplatno</span>
+                <strong>Osnovna skripta</strong>
+            </a>
+            <a href="#detaljna-skripta" class="kartica-gumb" id="detaljna-skripta">
+                <div class="kg-ikona">📖</div>
+                <span class="kg-badge premium">Premium</span>
+                <strong>Detaljna skripta</strong>
+            </a>
+            <a href="#pripreme" class="kartica-gumb" id="pripreme">
+                <div class="kg-ikona">🎯</div>
+                <span class="kg-badge premium">Premium</span>
+                <strong>Pripreme za predmete</strong>
+            </a>
+            <a href="#videi" class="kartica-gumb" id="videi">
+                <div class="kg-ikona">🎬</div>
+                <span class="kg-badge premium">Premium</span>
+                <strong>Videi za pomoć pri praksi</strong>
+            </a>
+            <a href="#karijere" class="kartica-gumb" id="karijere-link">
+                <div class="kg-ikona">🎓</div>
+                <span class="kg-badge free">Besplatno</span>
+                <strong>Karijere nakon studija</strong>
+            </a>
+            <a href="#ai" class="kartica-gumb" id="ai">
+                <div class="kg-ikona">🤖</div>
+                <span class="kg-badge premium">Premium</span>
+                <strong>AI asistent</strong>
+            </a>
+            <a href="#3d" class="kartica-gumb" id="3d">
+                <div class="kg-ikona">🦷</div>
+                <span class="kg-badge free">Besplatno</span>
+                <strong>3D prikaz čeljusti</strong>
+            </a>
         </div>
-      </li>
+    </main>
 
-      <!-- KONTAKT -->
-      <li class="nav-item">
-        <a href="#kontakt">Kontakt</a>
-      </li>
+    <!-- Karijere sekcija -->
+    <section class="karijere-nakon-studija" id="karijere">
+        <div class="karijere-inner">
+            <h2>Što nakon završenog fakulteta stomatologije?</h2>
+            <p>
+                Nakon završenog studija stomatologije otvaraju se različite mogućnosti, kao što su
+                rad u privatnoj ili državnoj praksi, specijalizacije, estetska medicina,
+                ortodoncija, akademska karijera ili otvaranje vlastite ordinacije.
+            </p>
+            <div class="karijere-tagovi">
+                <span class="tag">Privatna praksa</span>
+                <span class="tag">Državna ordinacija</span>
+                <span class="tag">Specijalizacija</span>
+                <span class="tag">Estetska medicina</span>
+                <span class="tag">Ortodoncija</span>
+                <span class="tag">Akademska karijera</span>
+                <span class="tag">Vlastita ordinacija</span>
+            </div>
+        </div>
+    </section>
 
-      <!-- CTA -->
-      <li class="nav-item">
-        <a href="#sadrzaj" class="nav-cta">Počni učiti →</a>
-      </li>
+    <footer>
+        <p>&copy; 2025 Dent Mind | Sva prava pridržana</p>
+    </footer>
 
-    </ul>
-  </div>
-</nav>
+    <script>
+        // Dropdown logika
+        const items = document.querySelectorAll('.nav-item');
 
-<!-- ══ HEADER / HERO ══ -->
-<header>
-  <h1>Dobrodošli na<br><em>Dent Mind</em></h1>
-  <p>Istraži predmete na stomatologiji, praktične vježbe, slike, kvizove i pripreme za ispite.</p>
-  <div class="hero-gumbi">
-    <a href="#sadrzaj" class="btn btn-puni">🦷 Istraži sadržaj</a>
-    <a href="#3d" class="btn btn-rubni">3D prikaz čeljusti</a>
-  </div>
-</header>
+        items.forEach(item => {
+            const trigger = item.querySelector('.nav-trigger');
+            if (!trigger) return;
+            trigger.addEventListener('click', e => {
+                e.stopPropagation();
+                const bio = item.classList.contains('otvoren');
+                items.forEach(i => {
+                    i.classList.remove('otvoren');
+                    const t = i.querySelector('.nav-trigger');
+                    if (t) t.setAttribute('aria-expanded', 'false');
+                });
+                if (!bio) {
+                    item.classList.add('otvoren');
+                    trigger.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
 
-<!-- ══ GLAVNI SADRŽAJ ══ -->
-<main id="sadrzaj">
-  <h2>Odaberi što želiš istražiti:</h2>
-  <div class="separator"></div>
+        document.addEventListener('click', () => {
+            items.forEach(i => {
+                i.classList.remove('otvoren');
+                const t = i.querySelector('.nav-trigger');
+                if (t) t.setAttribute('aria-expanded', 'false');
+            });
+        });
 
-  <div class="gumbi">
+        // Hamburger
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('vidljiv');
+        });
 
-    <a href="#predmeti" class="kartica-gumb" id="predmeti">
-      <div class="kg-ikona">📚</div>
-      <span class="kg-badge free">Besplatno</span>
-      <strong>Predmeti i kolegiji</strong>
-    </a>
-
-    <a href="#osnovna-skripta" class="kartica-gumb" id="osnovna-skripta">
-      <div class="kg-ikona">📄</div>
-      <span class="kg-badge free">Besplatno</span>
-      <strong>Osnovna skripta</strong>
-    </a>
-
-    <a href="#detaljna-skripta" class="kartica-gumb" id="detaljna-skripta">
-      <div class="kg-ikona">📖</div>
-      <span class="kg-badge premium">Premium</span>
-      <strong>Detaljna skripta</strong>
-    </a>
-
-    <a href="#pripreme" class="kartica-gumb" id="pripreme">
-      <div class="kg-ikona">🎯</div>
-      <span class="kg-badge premium">Premium</span>
-      <strong>Pripreme za predmete</strong>
-    </a>
-
-    <a href="#videi" class="kartica-gumb" id="videi">
-      <div class="kg-ikona">🎬</div>
-      <span class="kg-badge premium">Premium</span>
-      <strong>Videi za pomoć pri praksi</strong>
-    </a>
-
-    <a href="#karijere" class="kartica-gumb" id="karijere-link">
-      <div class="kg-ikona">🎓</div>
-      <span class="kg-badge free">Besplatno</span>
-      <strong>Karijere nakon studija</strong>
-    </a>
-
-    <a href="#ai" class="kartica-gumb" id="ai">
-      <div class="kg-ikona">🤖</div>
-      <span class="kg-badge premium">Premium</span>
-      <strong>AI asistent</strong>
-    </a>
-
-    <a href="#3d" class="kartica-gumb" id="3d">
-      <div class="kg-ikona">🦷</div>
-      <span class="kg-badge free">Besplatno</span>
-      <strong>3D prikaz čeljusti</strong>
-    </a>
-
-  </div>
-</main>
-
-<!-- ══ KARIJERE ══ -->
-<section class="karijere-nakon-studija" id="karijere">
-  <div class="karijere-inner">
-    <h2>Što nakon završenog fakulteta stomatologije?</h2>
-    <p>
-      Nakon završenog studija stomatologije otvaraju se različite mogućnosti, kao što su
-      rad u privatnoj ili državnoj praksi, specijalizacije, estetska medicina,
-      ortodoncija, akademska karijera ili otvaranje vlastite ordinacije.
-    </p>
-    <div class="karijere-tagovi">
-      <span class="tag">Privatna praksa</span>
-      <span class="tag">Državna ordinacija</span>
-      <span class="tag">Specijalizacija</span>
-      <span class="tag">Estetska medicina</span>
-      <span class="tag">Ortodoncija</span>
-      <span class="tag">Akademska karijera</span>
-      <span class="tag">Vlastita ordinacija</span>
-    </div>
-  </div>
-</section>
-
-<!-- ══ FOOTER ══ -->
-<footer>
-  <p>&copy; 2025 <strong>Dent Mind</strong> | Sva prava pridržana</p>
-</footer>
-
-<script>
-// ── Dropdown logika ──
-const items = document.querySelectorAll('.nav-item');
-
-items.forEach(item => {
-  const trigger = item.querySelector('.nav-trigger');
-  if (!trigger) return;
-  trigger.addEventListener('click', e => {
-    e.stopPropagation();
-    const bio = item.classList.contains('otvoren');
-    items.forEach(i => {
-      i.classList.remove('otvoren');
-      const t = i.querySelector('.nav-trigger');
-      if (t) t.setAttribute('aria-expanded', 'false');
-    });
-    if (!bio) {
-      item.classList.add('otvoren');
-      trigger.setAttribute('aria-expanded', 'true');
-    }
-  });
-});
-
-document.addEventListener('click', () => {
-  items.forEach(i => {
-    i.classList.remove('otvoren');
-    const t = i.querySelector('.nav-trigger');
-    if (t) t.setAttribute('aria-expanded', 'false');
-  });
-});
-
-// ── Hamburger ──
-document.getElementById('hamburger').addEventListener('click', () => {
-  document.getElementById('navLinks').classList.toggle('vidljiv');
-});
-
-document.getElementById('navLinks').querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('vidljiv'));
-});
-</script>
+        document.getElementById('navLinks').querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('vidljiv'));
+        });
+    </script>
 
 </body>
-</html>
 </html>
