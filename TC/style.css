@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f8d7da, #f5e6ea);
+    color: #5a3b42;
+}
+
+/* NASLOV */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    color: #b76e79;
+}
+
+/* MENU (POČETNA) */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+/* KARTICE */
+.card {
+    width: 180px;
+    height: 120px;
+    background: #fff0f3;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* SEKCIJE */
+.page {
+    text-align: center;
+    padding: 30px;
+}
+
+/* SLIKE */
+.content img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* TEKST BOX (INTERVJUI) */
+.box {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* GLAZBA LISTA */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+}
+
+/* STRELICA */
+.back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #b76e79;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.back:hover {
+    transform: scale(1.1);
+}
+
+/* SKRIVANJE ELEMENATA */
+.hidden {
+    display: none;
+}
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.hidden {
+    display: none !important;
+}
